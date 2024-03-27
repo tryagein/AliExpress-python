@@ -1,0 +1,103 @@
+5-3
+alien_color = 'green'
+if alien_color == 'green':
+    print('You got 5 points')
+
+5-4
+V1:
+alien_color = 'green'
+if alien_color == 'green':
+    print('You got 5 points')
+else:
+    print('You got 10 points')
+  
+V2：
+alien_color = 'red'
+if alien_color == 'green':
+    print('You got 5 points')
+else:
+    print('You got 10 points')
+
+5-5
+alien_color = 'red'
+if alien_color == 'green':
+    print('You have earned 5 points')
+elif alien_color == 'red':
+    print('You have earned 10 points')
+else:
+    print('You have earned 15 points')
+
+OMIT THE REST
+
+5-6
+age = 2
+if age < 2:
+    print("You are a baby")
+elif age < 4:
+    print("You are a toddler")
+elif age < 13:
+    print("You are an child")
+elif age < 20:
+    print("You are a teenager")
+else:
+    print("I don't like to code so many useless phrases")
+
+5-7
+V1:
+favorite_fruits = ["apple", "banana", "cherry"]
+fruits = ["apple", "banana", "cherry", "orange"]
+for fruit in fruits:
+    for fruit_1 in favorite_fruits:
+        if fruit == fruit_1:
+            print(f"I like {fruit}")
+
+V2：
+favorite_fruits = ["apple", "banana", "cherry"]
+fruits = ["apple", "banana", "cherry", "orange"]
+for fruit in fruits:
+        if fruit in favorite_fruits:
+            print(f"I like {fruit}")
+
+5-8
+peoples = ["admin", "user", "guest", "alien", "robot"]
+for person in peoples:
+    if person == "admin":
+        print(f"hello, {person}")
+    else:
+        print("OK")
+
+5-9
+peoples = []
+if peoples:
+    for person in peoples:
+        if person == "admin":
+            print(f"hello, {person}")
+        else:
+            print("OK")
+else:
+    print("we need to find some users")
+
+5-10
+current_users = ["John", "jane", "MARY", "peter", "Lisa"]
+new_users = ["jane", "mary", "Peter", "Lisa", "JAMES"]
+base_users = []
+for user in current_users:
+    base_users.append(user.lower())
+for user in new_users:
+    if user.lower() in base_users:
+        print(f"{user} is already in the list")
+    else:
+        print(f"{user} can be registered")
+
+5-11
+numbers = range(1, 10)
+for i in numbers:
+    if i == 1:
+        print(f"{i}st\n")
+    elif i == 2:
+        print(f"{i}nd\n")
+    elif i == 3:
+        print(f"{i}rd\n")
+    else:
+        print(f"{i}th\n")
+
