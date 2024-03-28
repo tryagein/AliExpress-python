@@ -1,0 +1,120 @@
+6-1:
+Dick = {
+    "name": "Dick",
+    "age": 30,
+    "friends": ["Jane", "John", "Mary"],
+    "hobbies": ["Reading", "Cooking", "Sleeping"]
+}
+for key, value in Dick.items():
+    print(f"{key}: {value}")
+
+6-2
+omit
+useless
+
+6-3
+omit
+useless
+
+6-4
+dictionary = {
+    "key1": "value1",
+    "key2": "value2",
+    "key3": "value3"
+}
+for key, value in dictionary.items():
+    print(key, value)
+for key in dictionary.keys():
+    print(key)
+for value in dictionary.values():
+    print(value)
+dictionary['key4'] = 'value4'
+print(dictionary)
+
+6-5
+dictionary = {
+    "key1": "value1",
+    "key2": "value2",
+    "key3": "value3"
+}
+for key, value in dictionary.items():
+    print(f" The {key} runs through {value}")
+for key in dictionary.keys():
+    print(key)
+for value in dictionary.values():
+    print(value)
+
+6-6
+dictionary = {
+    "key1": "value1",
+    "key2": "value2",
+    "key3": "value3"
+}
+suspected_key = ["key1", "key2", "key4"]
+for key in suspected_key:
+    if key in dictionary.keys():
+        print(f"{key} is in the dictionary")
+    else:
+        print(f"{key} is not in the dictionary")
+
+6-7
+dictionary_1 = {
+    "key1": ["value1", "value1.1"],
+    "key2": "value2",
+    "key3": "value3"
+}
+dictionary_2 = {
+    "key1": "value1",
+    "key2": "value2",
+    "key3": "value3"
+}
+dictionary_3 = {
+    "key1": "value1",
+    "key2": "value2",
+    "key3": "value3",
+    "key4": "value4"
+}
+people = [dictionary_1, dictionary_2, dictionary_3]
+for man in people[:]:
+    print(man)
+
+6-8
+pets = [
+    {"type": 'dog', "host_name": 'Fido'},
+    {"type": 'cat', "host_name": 'Kitty'},
+    {"type": 'fish', "host_name": 'Tuna'},
+    {"type": 'bird', "host_name": 'Penguin'}
+]
+for pet in pets:
+    print(pet)
+
+6-9
+favorite_places = {
+    "John": ["Paris", "London"],
+    "Jane": ["London", "New York"],
+    "Mary": "New York"
+}
+for name, places in favorite_places.items():
+    print(f"{name}'s favorite places are {' '.join(places)}")
+
+6-10
+Omit
+
+6-11
+cities = {
+    "New York": {"Affiliated country": "America", "Population": 8110000, "Fact": "Many shot cases"},
+    "Paris": {"Affiliated country": "French", "Population": 2000, "Fact": "Many robberies"}
+}
+for city, info in cities.items():
+    print(f"{city} is in {info['Affiliated country']}, and has a population of {info['Population']}. "
+          f"In fact, it also has {info['Fact']}.")
+
+6-12
+ADD A LIST IN THE DICTIONARY IN 
+cities = {
+    "New York": {"Affiliated country": "America", "Population": 8110000, "Fact": "Many shot cases"},
+    "Paris": {"Affiliated country": "French", "Population": 2000, "Fact": ["Many robberies", "Many shootings"]},
+}
+for city, info in cities.items():
+    print(f"{city} is in {info['Affiliated country']}, and has a population of {info['Population']}. "
+          f"In fact, it also has {info['Fact']}.")
