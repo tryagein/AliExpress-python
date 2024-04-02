@@ -1,0 +1,69 @@
+7-1
+massage = input("What kind of car do you want ")
+print(f"Let me see if I can find a {massage}")
+
+7-2
+people = int(input("how many people will go for dinner"))
+if people >= 8:
+    print("There are no empty tables here.")
+else:
+    print("There are empty tables here.")
+
+PS：这个例子可以看出来int（）不是一个接收函数，而是一个强行转换格式
+
+7-3
+massage = int(input("please enter a number so I can tell you if it is a multiple of 10"))
+if massage % 10 == 0:
+    print(f"{massage} is a multiple of 10")
+else:
+    print(f"{massage} is not a multiple of 10")
+
+7-4
+batching = " "
+while batching != "quit":
+    batching = input("Which batch do you want ")
+    if batching == "quit":
+        break
+    else:
+        print(f"We will put some {batching} into the pizza")
+
+7-5
+age = 1
+while age >= 1:
+    age = int(input("how old are you?"))
+    if 0 <= age <= 3:
+        print("free")
+    elif 3 < age <= 12:
+        print("10")
+    elif 12 < age:
+        print("15")
+    else:
+        break
+
+7-6
+age = 1
+while age:
+    massage = input("how old are you?")
+    if massage == "quit":
+        break
+    age = int(massage)
+    if 0 <= age <= 3:
+        print("free")
+    elif 3 < age <= 12:
+        print("10")
+    elif 12 < age:
+        print("15")
+      
+7-7
+omit
+
+7-8
+sandwich_orders = ["1", "2", "3", "4"]
+finished_sandwiches = []
+i = 0
+while i < len(sandwich_orders):
+    x = sandwich_orders[:].pop(i)
+    finished_sandwiches.append(x)
+    print(f"I made you {x} sandwich")
+    i += 1
+print(finished_sandwiches)
